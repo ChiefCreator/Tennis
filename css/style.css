@@ -1,0 +1,45 @@
+@import "../../fonts/stylesheet.css";
+body {
+  font-family: "Gilroy";
+}
+
+.header {
+  background-image: url("./../img/Rectangle 26.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  padding: 30px 0;
+  font-size: 14px;
+}
+.navbar .nav-brand {
+  margin-right: 124px;
+}
+.navbar .navbar-nav {
+  gap: 40px;
+}
+.navbar .navbar-nav a {
+  color: white !important;
+  padding: 0 !important;
+}
+.navbar .navbar__social {
+  gap: 20px;
+  margin-left: 185px;
+}
+
+@media (max-width: 1200px) {
+  .navbar-nav {
+    margin-top: 20px;
+    gap: 20px !important;
+  }
+  .nav-item {
+    font-size: 18px;
+  }
+  .navbar__social {
+    margin-top: 20px;
+    margin-left: 0 !important;
+  }
+}
