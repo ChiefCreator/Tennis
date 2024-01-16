@@ -8,7 +8,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .navbar {
@@ -41,5 +42,106 @@ body {
   .navbar__social {
     margin-top: 20px;
     margin-left: 0 !important;
+  }
+}
+.header-title {
+  max-width: 636px;
+  text-wrap: balance;
+  font-size: 48px;
+  color: white;
+  line-height: 140%;
+}
+.header-title.header-title_margin {
+  margin-top: 200px;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.video .video__icon {
+  width: 72px;
+  height: 72px;
+  background-color: #8D86C9;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.video .video__icon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
+  border: 2px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.video .video__icon:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(1.3);
+          transform: translate(-50%, -50%) scale(1.3);
+}
+.video .video__text {
+  max-width: 158px;
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
+  margin: 0;
+}
+.video.video_margin {
+  margin-top: 60px;
+}
+
+.abilities {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 12px 3fr 12px 3fr 12px 3fr;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 12px;
+  padding: 0;
+}
+.abilities .abilities__item {
+  padding: 35px 40px 40px 35px;
+  background-color: #8D86C9;
+  height: 151px;
+  list-style: none;
+  position: relative;
+  color: white;
+}
+.abilities .abilities__item .abilities__title {
+  font-size: 18px;
+}
+.abilities .abilities__item .abilities__text {
+  font-size: 24px;
+}
+.abilities .abilities__item .abilities__icon {
+  position: absolute;
+  top: 72px;
+  right: 35px;
+}
+.abilities.abilities_margin {
+  margin-top: 202px;
+}
+
+@media (max-width: 1150px) {
+  .abilities {
+    -ms-grid-columns: (6fr)[2];
+    grid-template-columns: repeat(2, 6fr);
+  }
+}
+@media (max-width: 600px) {
+  .abilities {
+    -ms-grid-columns: 12fr;
+    grid-template-columns: 12fr;
   }
 }
