@@ -135,8 +135,8 @@ body {
 
 @media (max-width: 1150px) {
   .abilities {
-    -ms-grid-columns: (6fr)[2];
-    grid-template-columns: repeat(2, 6fr);
+    -ms-grid-columns: 6fr 6fr;
+    grid-template-columns: 6fr 6fr;
   }
 }
 @media (max-width: 600px) {
