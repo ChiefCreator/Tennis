@@ -43,18 +43,32 @@ body {
     margin-top: 20px;
     margin-left: 0 !important;
   }
+  .nav-brand {
+    margin-right: 0 !important;
+  }
 }
 .header-title {
   max-width: 636px;
   text-wrap: balance;
-  font-size: 48px;
+  font-size: clamp(1.438rem, 1.148rem + 1.54vw, 3rem);
   color: white;
   line-height: 140%;
 }
 .header-title.header-title_margin {
-  margin-top: 200px;
+  margin-top: clamp(0rem, -2.315rem + 12.35vw, 12.5rem);
 }
 
+@media screen and (max-width: 1000px) {
+  .header-title.header-title_margin {
+    margin-top: 0 !important;
+  }
+  .abilities.abilities_margin {
+    margin-top: 35px !important;
+  }
+  .video.video_margin {
+    margin-top: 35px !important;
+  }
+}
 .video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,7 +113,7 @@ body {
   margin: 0;
 }
 .video.video_margin {
-  margin-top: 60px;
+  margin-top: clamp(2.188rem, 1.898rem + 1.54vw, 3.75rem);
 }
 
 .abilities {
@@ -130,7 +144,7 @@ body {
   right: 35px;
 }
 .abilities.abilities_margin {
-  margin-top: 202px;
+  margin-top: clamp(2.188rem, 0.255rem + 10.31vw, 12.625rem);
 }
 
 @media (max-width: 1150px) {
