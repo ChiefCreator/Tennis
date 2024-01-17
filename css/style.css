@@ -159,3 +159,35 @@ body {
     grid-template-columns: 12fr;
   }
 }
+.images .row {
+  gap: 64px;
+  margin: 175px 0;
+}
+.images .row .col_width {
+  max-width: 376px;
+}
+.images .row .col_width .court {
+  height: 450px;
+  position: relative;
+}
+.images .row .col_width .court .court__title {
+  color: white;
+  font-size: 27px;
+  line-height: 140%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 40px;
+  width: 100%;
+  text-wrap: balance;
+}
+.images .row .col_width .court.court_1 {
+  background-image: url("./../../img/Rectangle 39.png");
+}
+.images .row .col_width .court.court_2 {
+  background-image: url("./../../img/Rectangle 41.png");
+}
+.images .row .col_width .court.court_3 {
+  background-image: url("./../../img/Rectangle 43.png");
+}
