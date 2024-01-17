@@ -192,3 +192,72 @@ body{
         }
     }
 }
+.sportclub{
+    &.sportclub_margin{
+        margin-bottom: 150px;
+    }
+    .sportclub-content{
+        display: flex;
+        align-items: center;
+        .sportclub-content__img{
+            margin-right: -72.5px;
+            z-index: 2;
+        }
+        .sportclub-content__article{
+            padding: 70px 60px 84px 145px;
+            background-color: $block-background-color;
+            h1{
+                font-size: 36px;
+                line-height: 140%; 
+                margin-bottom: 25px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 140%;
+                &.p_margin{
+                    margin-top: 20px;
+                    margin-bottom: 35px;
+                }
+            }
+            h2{
+                font-size: 21px;
+                line-height: 140%;
+                margin-bottom: 25px;
+            }
+            .sportclub-content__list{
+                list-style: none;
+                padding: 0;
+                font-size: 14px;
+                line-height: 140%;
+                .sportclub-content__item::before{
+                    content: "";
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $main-background-color;
+                    margin-right: 23px;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) { 
+    .sportclub-content{
+        flex-direction: column;
+    }
+    .col_w{
+         max-width: 526px !important;
+    }
+    .sportclub-content__img{
+        margin-right: 0 !important;
+        img{
+            width: 100%;
+        }
+    }
+    .sportclub-content__article{
+        padding: 70px 10px 84px 10px !important; 
+    }
+
+}

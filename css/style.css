@@ -191,3 +191,77 @@ body {
 .images .row .col_width .court.court_3 {
   background-image: url("./../../img/Rectangle 43.png");
 }
+
+.sportclub.sportclub_margin {
+  margin-bottom: 150px;
+}
+.sportclub .sportclub-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sportclub .sportclub-content .sportclub-content__img {
+  margin-right: -72.5px;
+  z-index: 2;
+}
+.sportclub .sportclub-content .sportclub-content__article {
+  padding: 70px 60px 84px 145px;
+  background-color: #F7ECE1;
+}
+.sportclub .sportclub-content .sportclub-content__article h1 {
+  font-size: 36px;
+  line-height: 140%;
+  margin-bottom: 25px;
+}
+.sportclub .sportclub-content .sportclub-content__article p {
+  font-size: 14px;
+  line-height: 140%;
+}
+.sportclub .sportclub-content .sportclub-content__article p.p_margin {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.sportclub .sportclub-content .sportclub-content__article h2 {
+  font-size: 21px;
+  line-height: 140%;
+  margin-bottom: 25px;
+}
+.sportclub .sportclub-content .sportclub-content__article .sportclub-content__list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 140%;
+}
+.sportclub .sportclub-content .sportclub-content__article .sportclub-content__list .sportclub-content__item::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #8D86C9;
+  margin-right: 23px;
+  margin-top: 7px;
+}
+
+@media (max-width: 1200px) {
+  .sportclub-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col_w {
+    max-width: 526px !important;
+  }
+  .sportclub-content__img {
+    margin-right: 0 !important;
+  }
+  .sportclub-content__img img {
+    width: 100%;
+  }
+  .sportclub-content__article {
+    padding: 70px 10px 84px 10px !important;
+  }
+}
