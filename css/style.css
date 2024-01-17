@@ -139,18 +139,27 @@ body {
   margin-top: clamp(2.188rem, 0.255rem + 10.31vw, 12.625rem);
 }
 
-.images .row {
-  gap: 64px;
+.images {
   margin: 175px 0;
 }
-.images .row .col_width {
+.images .col {
   max-width: 376px;
 }
-.images .row .col_width .court {
+.images .image-card {
   height: 450px;
   position: relative;
 }
-.images .row .col_width .court .court__title {
+.images .image-card.image-card_1 {
+  background-image: url("./../../img/Rectangle 39.png");
+}
+.images .image-card.image-card_2 {
+  background-image: url("./../../img/Rectangle 41.png");
+}
+.images .image-card.image-card_3 {
+  background-image: url("./../../img/Rectangle 43.png");
+}
+.images .image-card h3 {
+  margin: 0;
   color: white;
   font-size: 27px;
   line-height: 140%;
@@ -161,15 +170,6 @@ body {
   bottom: 40px;
   width: 100%;
   text-wrap: balance;
-}
-.images .row .col_width .court.court_1 {
-  background-image: url("./../../img/Rectangle 39.png");
-}
-.images .row .col_width .court.court_2 {
-  background-image: url("./../../img/Rectangle 41.png");
-}
-.images .row .col_width .court.court_3 {
-  background-image: url("./../../img/Rectangle 43.png");
 }
 
 .sportclub.sportclub_margin {

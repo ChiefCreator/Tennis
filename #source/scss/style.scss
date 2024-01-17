@@ -146,35 +146,33 @@ body{
     }
 }
 .images{
-    .row{
-        gap:64px;
-        margin: 175px 0;
-        .col_width{
-            max-width: 376px;
-            .court{
-                height: 450px;
-                position: relative;
-                .court__title{
-                    color:$main-color;
-                    font-size: 27px;
-                    line-height: 140%;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    bottom: 40px;
-                    width: 100%;
-                    text-wrap: balance;
-                }
-                &.court_1{
-                    background-image: url("./../../img/Rectangle\ 39.png");
-                }
-                &.court_2{
-                    background-image: url("./../../img/Rectangle\ 41.png");
-                }
-                &.court_3{
-                    background-image: url("./../../img/Rectangle\ 43.png");
-                }
-            }
+    margin: 175px 0;
+    .col{
+        max-width: 376px;
+    }
+    .image-card{
+        height: 450px;
+        position: relative;
+        &.image-card_1{
+            background-image: url('./../../img/Rectangle\ 39.png');
+        }
+        &.image-card_2{
+            background-image: url('./../../img/Rectangle\ 41.png');
+        }
+        &.image-card_3{
+            background-image: url('./../../img/Rectangle\ 43.png');
+        }
+        h3{
+            margin: 0;
+            color:$main-color;
+            font-size: 27px;
+            line-height: 140%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 40px;
+            width: 100%;
+            text-wrap: balance;
         }
     }
 }
