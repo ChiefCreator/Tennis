@@ -116,29 +116,21 @@ body {
   margin-top: clamp(2.188rem, 1.898rem + 1.54vw, 3.75rem);
 }
 
-.abilities {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 12px 3fr 12px 3fr 12px 3fr;
-  grid-template-columns: repeat(4, 3fr);
-  gap: 12px;
-  padding: 0;
-}
 .abilities .abilities__item {
-  padding: 35px 40px 40px 35px;
   background-color: #8D86C9;
+  padding: 35px 40px 40px 35px;
   height: 151px;
   list-style: none;
   position: relative;
   color: white;
 }
-.abilities .abilities__item .abilities__title {
+.abilities .abilities__title {
   font-size: 18px;
 }
-.abilities .abilities__item .abilities__text {
+.abilities .abilities__text {
   font-size: 24px;
 }
-.abilities .abilities__item .abilities__icon {
+.abilities .abilities__icon {
   position: absolute;
   top: 72px;
   right: 35px;
@@ -147,18 +139,6 @@ body {
   margin-top: clamp(2.188rem, 0.255rem + 10.31vw, 12.625rem);
 }
 
-@media (max-width: 1150px) {
-  .abilities {
-    -ms-grid-columns: 6fr 6fr;
-    grid-template-columns: 6fr 6fr;
-  }
-}
-@media (max-width: 600px) {
-  .abilities {
-    -ms-grid-columns: 12fr;
-    grid-template-columns: 12fr;
-  }
-}
 .images .row {
   gap: 64px;
   margin: 175px 0;

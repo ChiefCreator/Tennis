@@ -122,41 +122,27 @@ body{
     }
 }
 .abilities{
-    display: grid;
-    grid-template-columns: repeat(4,3fr);
-    gap:12px;
-    padding: 0;
     .abilities__item{
+        background-color: $main-background-color;
         padding: 35px 40px 40px 35px;
-        background-color: #8D86C9;
         height: 151px;
         list-style: none;
         position: relative;
         color:$main-color;
-        .abilities__title{
-            font-size: 18px;
-        }
-        .abilities__text{
-            font-size: 24px;
-        }
-        .abilities__icon{
-            position: absolute;
-            top:72px;
-            right: 35px;
-        }
+    }
+    .abilities__title{
+        font-size: 18px;
+    }
+    .abilities__text{
+        font-size: 24px;
+    }
+    .abilities__icon{
+        position: absolute;
+        top:72px;
+        right: 35px;
     }
     &.abilities_margin{
         margin-top: clamp(2.188rem, 0.255rem + 10.31vw, 12.625rem);
-    }
-}
-@media (max-width: 1150px) { 
-    .abilities{
-        grid-template-columns: 6fr 6fr;
-    }
-}
-@media (max-width: 600px) { 
-    .abilities{
-        grid-template-columns: 12fr;
     }
 }
 .images{
