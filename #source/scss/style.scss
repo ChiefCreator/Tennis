@@ -83,6 +83,9 @@ body{
         margin-top: 35px !important;
     }
 }
+
+// Стилизация блока с видео 
+
 .video{
     display: flex;
     align-items: center;
@@ -121,6 +124,9 @@ body{
         margin-top: clamp(2.188rem, 1.898rem + 1.54vw, 3.75rem);
     }
 }
+
+// Стилизация блока с возможностями 
+
 .abilities{
     .abilities__item{
         background-color: $main-background-color;
@@ -145,6 +151,9 @@ body{
         margin-top: clamp(2.188rem, 0.255rem + 10.31vw, 12.625rem);
     }
 }
+
+// Стилизация секции с картинками кортов
+
 .images{
     margin: 175px 0;
     .col{
@@ -176,6 +185,9 @@ body{
         }
     }
 }
+
+// Стилизация секции с спортклубом
+
 .sportclub{
     &.sportclub_margin{
         margin-bottom: 150px;
@@ -243,6 +255,9 @@ body{
         padding: 70px 10px 84px 10px !important; 
     }
 }
+
+// Стилизация статьи с новостями
+
 .news{
     .card{
         height: 100%;
@@ -273,6 +288,9 @@ body{
         }
     }
 }
+
+// Стилизация секции с сотрудниками
+
 .staff{
     margin: 150px 0;
     .staff-card{
@@ -321,6 +339,9 @@ body{
         transition: opacity .15s ease;
     }
 }
+
+// Стилизация секции с ценой и услугами
+
 .prices-services{
     margin-bottom: 150px;
     .prices-services-inner{
