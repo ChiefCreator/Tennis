@@ -335,8 +335,12 @@ body{
         text-align: center;
         background: 0 0;
         border: 0;
-        opacity: .5;
-        transition: opacity .15s ease;
+        opacity: 1;
+        transition: opacity .3s ease, transform .3s ease;
+        &:hover{
+            opacity: .8;
+            transform: scale(.95);
+        }
     }
 }
 

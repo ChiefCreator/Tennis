@@ -323,9 +323,16 @@ body {
   text-align: center;
   background: 0 0;
   border: 0;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.15s ease;
-  transition: opacity 0.15s ease;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.slide-aside__button-wrapper .carousel-control-next:hover, .slide-aside__button-wrapper .carousel-control-prev:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .prices-services {
