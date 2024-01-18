@@ -271,3 +271,58 @@ body {
   margin-top: auto;
   margin-left: 0;
 }
+
+.staff {
+  margin: 150px 0;
+}
+.staff .staff__slide-aside {
+  margin-bottom: 75px;
+}
+.staff .staff__slide-aside .staff__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 140%;
+}
+.staff .staff-card {
+  padding: 15px;
+}
+.staff .staff-card img {
+  width: 100%;
+}
+.staff .staff-card .staff-card__name {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 21px;
+  line-height: 140%;
+}
+.staff .staff-card .staff-card__definition {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.button-wrapper .carousel-control-next, .button-wrapper .carousel-control-prev {
+  background-color: #8D86C9 !important;
+  position: static !important;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px !important;
+  height: 45px !important;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
