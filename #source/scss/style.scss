@@ -226,7 +226,6 @@ body{
         }
     }
 }
-
 @media (max-width: 1200px) { 
     .sportclub-content{
         flex-direction: column;
@@ -276,14 +275,6 @@ body{
 }
 .staff{
     margin: 150px 0;
-    .staff__slide-aside{
-        margin-bottom: 75px;
-        .staff__title{
-            margin: 0;
-            font-size: 36px;
-            line-height: 140%;
-        }
-    }
     .staff-card{
         padding: 15px;
         img{
@@ -301,7 +292,15 @@ body{
         }
     }
 }
-.button-wrapper{
+.slide-aside{
+    margin-bottom: 75px;
+    .slide-aside__title{
+        margin: 0;
+        font-size: 36px;
+        line-height: 140%;
+    }
+}
+.slide-aside__button-wrapper{
     .carousel-control-next, .carousel-control-prev {
         background-color: $main-background-color !important;
         position: static !important;
@@ -320,5 +319,51 @@ body{
         border: 0;
         opacity: .5;
         transition: opacity .15s ease;
+    }
+}
+.prices-services{
+    margin-bottom: 150px;
+    .prices-services-inner{
+        .col_padding{
+            padding: 0 clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
+        }
+        .prices{
+            .prices__title{
+                font-size: 36px;
+                line-height: 140%;
+                margin-bottom: 75px;
+            }
+            .accordion-item {
+                border-bottom: var(--bs-accordion-border-width) solid $main-background-color;
+            }
+            .accordion-item:not(:last-child){
+                margin-bottom: 30px;
+            }
+            .accordion-button{
+                padding: 15px 30px;
+                color: $main-color;
+                background-color: #8D86C9;
+            }
+            .accordion-button:not(.collapsed) {
+                color: $main-color;
+                background-color: #8D86C9;
+                box-shadow: none !important;
+            }
+            .accordion-button:focus {
+                border-color: none !important;
+                box-shadow: none !important;
+            }
+            .accordion-button::after {
+                background-image: url("./../../icon/bi_arrow-up-short.svg");
+            }
+        }
+        .services{
+            .caption{
+                position: absolute;
+                color: $main-color;
+                left: 40px;
+                bottom: 30px;
+            }
+        }
     }
 }

@@ -275,14 +275,6 @@ body {
 .staff {
   margin: 150px 0;
 }
-.staff .staff__slide-aside {
-  margin-bottom: 75px;
-}
-.staff .staff__slide-aside .staff__title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 140%;
-}
 .staff .staff-card {
   padding: 15px;
 }
@@ -300,7 +292,16 @@ body {
   line-height: 140%;
 }
 
-.button-wrapper .carousel-control-next, .button-wrapper .carousel-control-prev {
+.slide-aside {
+  margin-bottom: 75px;
+}
+.slide-aside .slide-aside__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.slide-aside__button-wrapper .carousel-control-next, .slide-aside__button-wrapper .carousel-control-prev {
   background-color: #8D86C9 !important;
   position: static !important;
   top: 0;
@@ -325,4 +326,47 @@ body {
   opacity: 0.5;
   -webkit-transition: opacity 0.15s ease;
   transition: opacity 0.15s ease;
+}
+
+.prices-services {
+  margin-bottom: 150px;
+}
+.prices-services .prices-services-inner .col_padding {
+  padding: 0 clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
+}
+.prices-services .prices-services-inner .prices .prices__title {
+  font-size: 36px;
+  line-height: 140%;
+  margin-bottom: 75px;
+}
+.prices-services .prices-services-inner .prices .accordion-item {
+  border-bottom: var(--bs-accordion-border-width) solid #8D86C9;
+}
+.prices-services .prices-services-inner .prices .accordion-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.prices-services .prices-services-inner .prices .accordion-button {
+  padding: 15px 30px;
+  color: white;
+  background-color: #8D86C9;
+}
+.prices-services .prices-services-inner .prices .accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #8D86C9;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.prices-services .prices-services-inner .prices .accordion-button:focus {
+  border-color: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.prices-services .prices-services-inner .prices .accordion-button::after {
+  background-image: url("./../../icon/bi_arrow-up-short.svg");
+}
+.prices-services .prices-services-inner .services .caption {
+  position: absolute;
+  color: white;
+  left: 40px;
+  bottom: 30px;
 }
