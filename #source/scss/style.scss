@@ -392,3 +392,52 @@ body{
         }
     }
 }
+
+// Стилизация footer
+
+.footer{
+    padding: 30px 0;
+    background-color: $block-background-color;
+    .roots-secure{
+        margin-right: 100px;
+        p{
+            font-size: 14px;
+            line-height: 140%;
+            margin:0;
+        }
+    }
+    .social{
+        gap:20px;
+    }
+}
+.footer-nav{
+    .footer-nav__list{
+        list-style: none;
+        gap:40px;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        .footer-nav__item{
+            a{
+                font-size: 14px;
+                line-height: 140%;
+                text-wrap: nowrap;
+                text-decoration: none;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+@media (max-width:1400px) {
+    .roots-secure{
+        margin-right: 40px !important;
+    }
+    .footer-nav__list{
+        gap:25px !important;
+    }
+}
+@media (max-width:768px) {
+    .roots-secure, .social{
+        margin-top: 40px;
+    }
+}

@@ -377,3 +377,49 @@ body {
   left: 40px;
   bottom: 30px;
 }
+
+.footer {
+  padding: 30px 0;
+  background-color: #F7ECE1;
+}
+.footer .roots-secure {
+  margin-right: 100px;
+}
+.footer .roots-secure p {
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0;
+}
+.footer .social {
+  gap: 20px;
+}
+
+.footer-nav .footer-nav__list {
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-nav .footer-nav__list .footer-nav__item a {
+  font-size: 14px;
+  line-height: 140%;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 1400px) {
+  .roots-secure {
+    margin-right: 40px !important;
+  }
+  .footer-nav__list {
+    gap: 25px !important;
+  }
+}
+@media (max-width: 768px) {
+  .roots-secure, .social {
+    margin-top: 40px;
+  }
+}
