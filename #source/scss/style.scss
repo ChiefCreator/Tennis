@@ -97,6 +97,16 @@ body{
         border-radius: 50%;
         position: relative;
         transition: all .2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after{
+            content: '\f04b';
+            font-size: 30px;
+            color: white;
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free' , 'Font Awesome 5 Brands';
+        }
         &::before{
             content: '';
             width: 100%;
@@ -135,6 +145,9 @@ body{
         list-style: none;
         position: relative;
         color:$main-color;
+        &:hover .abilities__icon{
+            animation: jump-link .5s ease 2;
+        }
     }
     .abilities__title{
         font-size: 18px;
@@ -146,9 +159,21 @@ body{
         position: absolute;
         top:72px;
         right: 35px;
+        cursor: pointer;
     }
     &.abilities_margin{
         margin-top: clamp(2.188rem, 0.255rem + 10.31vw, 12.625rem);
+    }
+    @keyframes jump-link {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-10px);
+        }
+        100%{
+            transform: translateY(0);
+        }
     }
 }
 
