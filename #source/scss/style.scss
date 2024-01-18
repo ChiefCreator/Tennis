@@ -349,8 +349,11 @@ body{
 .prices-services{
     margin-bottom: 150px;
     .prices-services-inner{
-        .col_padding{
-            padding: 0 clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
+        .col_padding-right{
+            padding-right: clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
+        }
+        .col_padding-left{
+            padding-left: clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
         }
         .prices{
             .prices__title{

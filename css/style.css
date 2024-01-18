@@ -338,8 +338,11 @@ body {
 .prices-services {
   margin-bottom: 150px;
 }
-.prices-services .prices-services-inner .col_padding {
-  padding: 0 clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
+.prices-services .prices-services-inner .col_padding-right {
+  padding-right: clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
+}
+.prices-services .prices-services-inner .col_padding-left {
+  padding-left: clamp(1.875rem, -1.522rem + 5.43vw, 5rem);
 }
 .prices-services .prices-services-inner .prices .prices__title {
   font-size: 36px;
