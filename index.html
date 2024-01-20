@@ -8,6 +8,100 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="modal fade" id="modalRent" tabindex="-1" aria-labelledby="modalRent" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalRent">Аренда корта</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <p>Мы сдаем наши корты в аренду. В аренду входят все оборудование, которое может понадобиться пользователю.</p>
+                <form class="form">
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text" id="input-num">+375</span>
+                                <input class="form-control" type="text" placeholder="Номер пользователя" aria-describedby="input-num">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text" id="input-num">Имя и фамилия</span>
+                                <input class="form-control" type="text" placeholder="Имя" aria-describedby="input-num">
+                                <input class="form-control" type="text" placeholder="Фамилия" aria-describedby="input-num">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioNameCort" id="radioNameCort1">
+                                        <label class="form-check-label" for="radioNameCort1">Аренда на 30 минут - 750 рублей</label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioNameCort" id="radioNameCort2">
+                                        <label class="form-check-label" for="radioNameCort2">Аренда на час - 1000 рублей</label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioNameCort" id="radioNameCort3">
+                                        <label class="form-check-label" for="radioNameCort3">Аренда на 3 часа - 2000 рублей</label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioNameCort" id="radioNameCort4">
+                                        <label class="form-check-label" for="radioNameCort4">Аренда на 5 часов - 3500 рублей</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit" class="btn btn_form">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalChild" tabindex="-1" aria-labelledby="modalChild" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalRent">Детский теннис</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <p>Квалифицированные тренеры, которые проводят занятия с детьми</p>
+                <form class="form">
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text" id="input-num">+375</span>
+                                <input class="form-control" type="text" placeholder="Номер пользователя" aria-describedby="input-num">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text" id="input-num">Имя и фамилия</span>
+                                <input class="form-control" type="text" placeholder="Имя" aria-describedby="input-num">
+                                <input class="form-control" type="text" placeholder="Фамилия" aria-describedby="input-num">
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit" class="btn btn_form">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container-xxl">
             <nav class="navbar navbar-expand-lg">
@@ -79,7 +173,7 @@
                     <div class="abilities__item">
                         <p class="abilities__title">Услуги</p>
                         <p class="abilities__text">Аренда корта</p>
-                        <div class="abilities__icon">
+                        <div class="abilities__icon" role="button" data-bs-toggle="modal" data-bs-target="#modalRent">
                             <img src="icon/ci_external-link.svg">
                         </div>
                     </div>
@@ -88,7 +182,7 @@
                     <div class="abilities__item">
                         <p class="abilities__title">Услуги</p>
                         <p class="abilities__text">Детский теннис</p>
-                        <div class="abilities__icon">
+                        <div class="abilities__icon" role="button" data-bs-toggle="modal" data-bs-target="#modalChild">
                             <img src="icon/ci_external-link.svg">
                         </div>
                     </div>

@@ -3,6 +3,54 @@ body {
   font-family: "Gilroy";
 }
 
+.modal .modal-dialog .modal-content {
+  background-color: #333;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title {
+  color: white;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  color: white;
+}
+.modal .modal-dialog .modal-content .modal-body .list-group-item {
+  background-color: #333;
+  color: white;
+  border: 1px solid #4e4e4e;
+}
+.modal .modal-dialog .modal-content .modal-body .input-group-text {
+  color: rgb(213, 213, 213);
+  border: 1px solid #595959;
+  background-color: #606060;
+}
+.modal .modal-dialog .modal-content .modal-body .form-control {
+  color: white;
+  border: 1px solid #595959;
+  background-color: #414141;
+}
+.modal .modal-dialog .modal-content .modal-body .form-control::-webkit-input-placeholder {
+  color: rgb(213, 213, 213);
+}
+.modal .modal-dialog .modal-content .modal-body .form-control::-moz-placeholder {
+  color: rgb(213, 213, 213);
+}
+.modal .modal-dialog .modal-content .modal-body .form-control:-ms-input-placeholder {
+  color: rgb(213, 213, 213);
+}
+.modal .modal-dialog .modal-content .modal-body .form-control::-ms-input-placeholder {
+  color: rgb(213, 213, 213);
+}
+.modal .modal-dialog .modal-content .modal-body .form-control::placeholder {
+  color: rgb(213, 213, 213);
+}
+.modal .modal-dialog .modal-content .modal-body .form-check-input:checked {
+  background-color: #8D86C9;
+  border-color: #8D86C9;
+}
+.modal .modal-dialog .modal-content .modal-body .btn_form {
+  color: white;
+  background-color: #8D86C9;
+}
+
 .header {
   background-image: url("./../img/Rectangle 26.png");
   background-position: center;
