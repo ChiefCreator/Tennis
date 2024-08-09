@@ -263,18 +263,22 @@ body {
 .images .col {
   max-width: 376px;
 }
+.images .g-5 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 .images .image-card {
   height: 450px;
   position: relative;
 }
 .images .image-card.image-card_1 {
-  background-image: url("./../../img/Rectangle 39.png");
+  background-image: url("./../img/Rectangle 39.png");
 }
 .images .image-card.image-card_2 {
-  background-image: url("./../../img/Rectangle 41.png");
+  background-image: url("./../img/Rectangle 41.png");
 }
 .images .image-card.image-card_3 {
-  background-image: url("./../../img/Rectangle 43.png");
+  background-image: url("./../img/Rectangle 43.png");
 }
 .images .image-card h3 {
   margin: 0;

@@ -249,17 +249,21 @@ body{
     .col{
         max-width: 376px;
     }
+    .g-5{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
     .image-card{
         height: 450px;
         position: relative;
         &.image-card_1{
-            background-image: url('./../../img/Rectangle\ 39.png');
+            background-image: url('./../img/Rectangle\ 39.png');
         }
         &.image-card_2{
-            background-image: url('./../../img/Rectangle\ 41.png');
+            background-image: url('./../img/Rectangle\ 41.png');
         }
         &.image-card_3{
-            background-image: url('./../../img/Rectangle\ 43.png');
+            background-image: url('./../img/Rectangle\ 43.png');
         }
         h3{
             margin: 0;
